@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getPDAccountNoDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pdaccno" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="treascode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPDAccountNoDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getPDAccountNoDetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getPDAccountNoDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:getPDAccountNoDetails" />
+  </wsdl:message>
+  <wsdl:message name="getPDAccountNoDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:getPDAccountNoDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPDAccountNoDetailsHttpGetIn">
+    <wsdl:part name="pdaccno" type="s:string" />
+    <wsdl:part name="treascode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getPDAccountNoDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getPDAccountNoDetailsHttpPostIn">
+    <wsdl:part name="pdaccno" type="s:string" />
+    <wsdl:part name="treascode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getPDAccountNoDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="EgAddNewPDAccountnoSoap">
+    <wsdl:operation name="getPDAccountNoDetails">
+      <wsdl:input message="tns:getPDAccountNoDetailsSoapIn" />
+      <wsdl:output message="tns:getPDAccountNoDetailsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="EgAddNewPDAccountnoHttpGet">
+    <wsdl:operation name="getPDAccountNoDetails">
+      <wsdl:input message="tns:getPDAccountNoDetailsHttpGetIn" />
+      <wsdl:output message="tns:getPDAccountNoDetailsHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="EgAddNewPDAccountnoHttpPost">
+    <wsdl:operation name="getPDAccountNoDetails">
+      <wsdl:input message="tns:getPDAccountNoDetailsHttpPostIn" />
+      <wsdl:output message="tns:getPDAccountNoDetailsHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EgAddNewPDAccountnoSoap" type="tns:EgAddNewPDAccountnoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getPDAccountNoDetails">
+      <soap:operation soapAction="http://tempuri.org/getPDAccountNoDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EgAddNewPDAccountnoSoap12" type="tns:EgAddNewPDAccountnoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getPDAccountNoDetails">
+      <soap12:operation soapAction="http://tempuri.org/getPDAccountNoDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EgAddNewPDAccountnoHttpGet" type="tns:EgAddNewPDAccountnoHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="getPDAccountNoDetails">
+      <http:operation location="/getPDAccountNoDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EgAddNewPDAccountnoHttpPost" type="tns:EgAddNewPDAccountnoHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="getPDAccountNoDetails">
+      <http:operation location="/getPDAccountNoDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EgAddNewPDAccountno">
+    <wsdl:port name="EgAddNewPDAccountnoSoap" binding="tns:EgAddNewPDAccountnoSoap">
+      <soap:address location="http://rajkosh.raj.nic.in/Services/EgAddNewPDAccountno.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EgAddNewPDAccountnoSoap12" binding="tns:EgAddNewPDAccountnoSoap12">
+      <soap12:address location="http://rajkosh.raj.nic.in/Services/EgAddNewPDAccountno.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EgAddNewPDAccountnoHttpGet" binding="tns:EgAddNewPDAccountnoHttpGet">
+      <http:address location="http://rajkosh.raj.nic.in/Services/EgAddNewPDAccountno.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EgAddNewPDAccountnoHttpPost" binding="tns:EgAddNewPDAccountnoHttpPost">
+      <http:address location="http://rajkosh.raj.nic.in/Services/EgAddNewPDAccountno.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

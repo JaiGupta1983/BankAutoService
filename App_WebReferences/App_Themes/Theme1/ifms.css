@@ -1,0 +1,401 @@
+﻿body {
+}
+ #divFreez {
+font-family: Verdana, Helvetica, sans-serif;
+font-size: 12px;
+padding: 0px;
+
+}
+heading
+{
+    font-size: 20px;
+    } 
+newTR
+{
+     background-color:white;
+    }  
+    newTD   
+    {WIDTH: 100px;
+         height:50%;
+        
+        }
+        newLinkButtonTR
+        {
+            background-color:#C0D89D;
+            }
+            newLinkButtonTD
+            {
+                WIDTH: 100px; padding-top:20px;
+                }
+                newLinkFooterTD{VERTICAL-ALIGN: bottom; PADDING-TOP: 10px}
+thead.fixedHeader {
+width: 584px;
+position:relative;
+
+
+
+} 
+tbody.scrollContent {
+width: 584px;
+overflow:auto;
+height: 200px;
+
+}     
+       
+.SubValue    {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    normal;
+    color: green;
+}
+.DarkSubValue    {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  20px;
+    font-weight:    normal;
+    color: green;
+}
+.remark
+{font-weight:    bold;
+	font-size: 7pt;
+    color: black;
+	}
+
+.LabelText
+{ 
+	font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: green;
+}
+.di
+{
+overflow-y:auto; height: 390px;padding:0px;border-spacing:0px;margin-right:0px;	}
+.ItemText
+{
+	font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    normal;
+    color: green;
+	}
+	.DarkLabelText
+	{
+		font-family: Verdana, Helvetica, sans-serif;
+    font-size:  20px;
+    font-weight:    normal;
+    color: green;
+		}
+.Hmenu
+{
+	
+	background-color: green;border-collapse :collapse;
+	}
+.HmenuText
+{
+	font-family: Verdana, Helvetica, sans-serif;
+    font-size:  12px;
+    font-weight:    Bold;
+    color: white;
+}
+.TDblank
+{
+	/* #c0d89d*/
+background-color :white;text-align: center; height: 20px;	
+font-family: Verdana, Helvetica, sans-serif;
+font-size:  16px;
+font-weight:    normal;
+color: green;
+}
+.AnyTable
+{
+border-collapse:separate; border: white 1pt ;width :99%;	
+}
+.ScrollTable
+{
+border-collapse:separate; border: green 1pt ; margin-left :13px; width :100%;	
+}
+.BudgetHeadTable
+{
+border-collapse: separate ; border: black 1pt outset;font-family: airal-narrow;font-size:x-small; 
+}
+.TableDescFields
+{
+font-size:12px;
+}
+.Treasury  {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  14px;
+    font-weight:    normal;
+    color: green;
+}
+.Disclaimer    {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size:  15px;
+    font-weight:    normal;
+    color: green;
+}
+.CommandButton {
+    /*font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color :Darkgreen;
+    background :white;*/
+    color:#004F00;
+   font-family:Verdana;
+   font-size:80%;   font-weight:bold;   background-color:white;
+   border:1px solid; border-color:#696;   height:22px;  
+}
+.btn
+{  
+   color:#004F00;
+   font-family:Verdana;
+   font-size:80%;   font-weight:bold;   background-color:white;
+   border:1px solid; border-color:#696;   height:22px;  
+ }
+.IE8Fix  
+ {  
+	  z-index: 99;  
+ } 
+ .DynamicMenuZIndex
+{
+	z-index: 99;
+} 
+
+.NormalRed
+{
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    color: red
+}
+.SiteTitle
+{
+	font-weight: bold;
+	font-size: 20px;
+	color: darkkhaki;
+	font-family: Verdana Bold, Helvetica, sans-serif;
+}
+ .SeperatorText
+  {
+	 font-weight: bold;
+	font-size: 11px;
+	font-family: Verdana, Helvetica, sans-serif;
+	color:whitesmoke;
+	text-decoration: none
+	
+  }
+.XMNormalRed
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+}
+.XMMessage    
+{
+	color:Red;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    font-style:italic;
+    font-size: 11px;
+}
+/*Css For Mapping  Froms
+.MainHeading
+{
+	font-size: 20px;
+	
+}
+.ListHeading
+{
+	font-size: 16px;
+}
+.ListData
+{
+	 font-size :8pt;
+ padding-left :4px;
+  text-align :left ;
+  
+ 
+}
+.ListName
+{
+	 font-size :8pt;
+ padding-left :4px;
+  text-align :left ;
+  width:60% ;
+   
+}
+--Css for Scroll Div
+.ScrollDiv
+{
+	overflow: scroll;
+	 height: 230px; 
+	 width: 100%;
+	  padding-left: 2px;
+	   vertical-align :top;
+}
+.ListCheckBox
+{
+ width :10px;
+ text-align :right ;
+}*/
+/*Css For Mapping  Froms*/
+.MainHeading
+{
+	font-size: 20px;
+	
+}
+.ListHeading
+{
+	font-size: 16px;
+}
+.ListData
+{
+	 font-size :8pt;
+ padding-left :4px;
+  text-align :left ;
+  width :80%;
+ 
+ 
+}
+.ListMapData
+{
+	 font-size :8pt;
+ padding-left :4px;
+  text-align :left ;
+  width:79%;
+ 
+ 
+}
+.ListUnMapData
+{
+	 font-size :8pt;
+ padding-left :4px;
+  text-align :left ;
+ 
+ 
+ 
+}
+.ListName
+{
+	 font-size :8pt;
+ padding-left :4px;
+  text-align :left ;
+  width:60% ;
+   
+}
+/*--Css for Scroll Div*/
+.ScrollDiv
+{
+	overflow: scroll;
+	 height: 230px; 
+	 width: 100%;
+	  padding-left: 2px;
+	   vertical-align :top;
+}
+.ListCheckBox
+{
+ width :15px;
+ text-align :right ;
+}
+.ListDelButton
+{
+ width :20%;
+ text-align :right ;
+}
+.ListToDate
+{
+	 text-align :right ;
+}
+
+.TextColumn
+{ 
+	font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+   color: green;
+     text-align:left;
+}
+/*modal popup*/
+.modalBackground
+{
+      background-color: Yellow;
+      filter: alpha(opacity=60);
+      opacity: 0.6;
+}
+ 
+.modalPopup
+{
+      background-color:#ffffdd;
+      border-width:3px;
+      border-style:solid;
+      border-color:Gray;
+      padding:5px;
+      width: 350px;
+      height:300px;
+}
+/*Set Background for modelpopupExtender control*/
+.modalBackgroundNotes {
+    background-color:#414141;
+    filter:alpha(opacity=70);
+    opacity:0.7;
+}
+
+/*Set style for pop up window*/
+.pnlPopNotes
+{
+	background-color: #faf9f4;
+	font-family: Tahoma, Helvetica, Sans-Serif;
+	font-weight: normal;
+	font-size: 9px;
+	padding: 1px;
+	border-style:groove
+	
+}
+/*Repeater css pager*/
+A.LinkButtonTab:link    {
+   font-weight: bold;
+	font-size: 12px;
+	color: blue;
+	font-family: Verdana, Helvetica, sans-serif;
+	text-decoration: none
+}
+A.LinkButtonTab:hover   
+{
+	font-weight: bold;
+	font-size: 12px;
+    text-decoration:    underline;
+    color:red;
+}
+
+A.LinkButtonTab:visited {
+   	font-weight: bold;
+	font-size: 12px;
+	color: red;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+.PageTitle
+{
+    border-color : Teal ;
+    
+    font-weight: bold; 
+    color: green;
+    background :white; 
+    font-family: arial; 
+    font-size: 13pt;
+    width :100%
+    
+}
+
+.PageTitleNEW
+{
+    font-weight: bold; 
+    color: green;
+    background :white; 
+    font-family: arial; 
+    font-size: 13pt;
+    width :100%
+}
+.PerformaTable
+{
+border-collapse: separate ; border: black 1pt outset;font-family: airal-narrow;font-size:small; 
+}

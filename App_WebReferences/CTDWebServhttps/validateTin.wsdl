@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="urn:validateTin" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="urn:validateTin" targetNamespace="urn:validateTin" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="validateTINResponse">
+    <wsdl:part name="validateTINReturn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="validateTINRequest">
+    <wsdl:part name="in0" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:portType name="IFMSValidation">
+    <wsdl:operation name="validateTIN" parameterOrder="in0">
+      <wsdl:input name="validateTINRequest" message="impl:validateTINRequest" />
+      <wsdl:output name="validateTINResponse" message="impl:validateTINResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="validateTinSoapBinding" type="impl:IFMSValidation">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="validateTIN">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="validateTINRequest">
+        <wsdlsoap:body use="encoded" namespace="urn:validateTin" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="validateTINResponse">
+        <wsdlsoap:body use="encoded" namespace="urn:validateTin" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IFMSValidationService">
+    <wsdl:port name="validateTin" binding="impl:validateTinSoapBinding">
+      <wsdlsoap:address location="https://rajtax.gov.in/vatweb/services/validateTin" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

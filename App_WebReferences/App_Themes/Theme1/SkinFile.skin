@@ -1,0 +1,140 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+
+    <%-- ************************************************************************************************   --%>
+    
+    
+   <asp:TextBox runat="server" Font-Size="Small"></asp:TextBox>
+ 
+   <asp:Label   runat="server" Font-Size="Small"  ></asp:Label>
+ 
+   <asp:Button  runat="server"  Font-Size="Small" />
+   
+ <%-- <asp:GridView   runat="server"  CellPadding="4"
+       ForeColor="#333333" AllowPaging="True" Width="100%" AllowSorting="True" >
+        <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+        <EditRowStyle BackColor="#999999" />
+        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+        <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+        <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" HorizontalAlign="Left" />
+        <RowStyle HorizontalAlign="Left" BackColor="#F7F6F3" ForeColor="#333333" />
+        <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+    </asp:GridView>
+    --%>
+    
+    
+    
+    
+    <%-- ************************************************************************************************   --%>
+    
+    
+    
+<asp:GridView runat="server" SkinID="gridSkinPT_AGT"  CellPadding="4" ForeColor="#333333"   GridLines="None"  AllowPaging="True" AutoGenerateColumns="true" Width="100%" AllowSorting="True">
+                                  <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                        <EditRowStyle BackColor="#999999" />
+                                        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333366" />
+                                        <PagerStyle BackColor="#5D7B9D" ForeColor="black" HorizontalAlign="Center" />
+                                        <HeaderStyle BackColor="#669FFF" Font-Bold="True" ForeColor="White" HorizontalAlign="Left" />
+                                        <RowStyle HorizontalAlign="Left" BackColor="#FFFFFF" ForeColor="Black" /> 
+                                        <AlternatingRowStyle BackColor="#D2E3FF" ForeColor="Black"  />
+</asp:GridView>
+<asp:GridView SkinID="gridSkinPF_AGF"   runat="server" CellPadding="2" ForeColor="#333333"    GridLines="horizontal"  AllowPaging="false" AutoGenerateColumns="false" Width="80%" AllowSorting="True">
+                                  <FooterStyle BackColor="green" Font-Bold="True" ForeColor="White" />
+                                        <EditRowStyle BackColor="#999999" />
+                                        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333366" />
+                                        <PagerStyle BackColor="lightgreen" ForeColor="black" HorizontalAlign="Center" />
+                                        <HeaderStyle BackColor="green" Font-Bold="True" ForeColor="White" HorizontalAlign="Left" />
+                                        <RowStyle HorizontalAlign="Left" BackColor="#C0D89D" ForeColor="black" /> 
+                                        <AlternatingRowStyle BackColor="#C0D89D" ForeColor="Black"  />
+</asp:GridView>
+<asp:GridView SkinID="gridSkinPT_AGF"  runat="server" CellPadding="4" ForeColor="#333333"   GridLines="none"  AllowPaging="true" AutoGenerateColumns="False" Width="80%" AllowSorting="True">
+                                  <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                        <EditRowStyle BackColor="#999999" />
+                                        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333366" />
+                                        <PagerStyle BackColor="#5D7B9D" ForeColor="black" HorizontalAlign="Center" />
+                                        <HeaderStyle BackColor="#669FFF" Font-Bold="True" ForeColor="White" HorizontalAlign="Left" />
+                                        <RowStyle HorizontalAlign="Left" BackColor="#FFFFFF" ForeColor="Black" /> 
+                                        <AlternatingRowStyle BackColor="#D2E3FF" ForeColor="Black"  />
+</asp:GridView>
+<asp:GridView SkinID="gridSkinPT_AGF1"  runat="server" CellPadding="3" BackColor="White" BorderColor="#CCCCCC"  BorderStyle="Double"   GridLines="vertical"   font-size="11px"  AllowPaging="true" AutoGenerateColumns="false" Width="100%" AllowSorting="True">
+                                  <FooterStyle BackColor="purple" Font-Bold="True" ForeColor="White" />
+                                        <EditRowStyle BackColor="#999999" />
+                                        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333366" />
+                                        <PagerStyle BackColor="purple" ForeColor="black" HorizontalAlign="Center" />
+                                        <HeaderStyle BackColor="#8E35EF" Font-Bold="True" ForeColor="White" HorizontalAlign="Left" />
+                                        <RowStyle HorizontalAlign="Left" BackColor="#E3E4FA" ForeColor="Black" /> 
+                                        <AlternatingRowStyle BackColor="white" ForeColor="Black"  />
+</asp:GridView>
+
+<asp:GridView SkinID="gridSkinPF_AGT"  runat="server" CellPadding="4" ForeColor="#333333"   GridLines="None"  AllowPaging="False" AutoGenerateColumns="true" Width="100%" AllowSorting="True">
+                                  <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                        <EditRowStyle BackColor="#999999" />
+                                        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333366" />
+                                        <PagerStyle BackColor="#5D7B9D" ForeColor="black" HorizontalAlign="Center" />
+                                        <HeaderStyle BackColor="#669FFF" Font-Bold="True" ForeColor="White" HorizontalAlign="Left" />
+                                        <RowStyle HorizontalAlign="Left" BackColor="#FFFFFF" ForeColor="Black" /> 
+                                        <AlternatingRowStyle BackColor="#D2E3FF" ForeColor="Black"  />
+</asp:GridView>
+
+<asp:GridView SkinID="prashGV"  runat="server" CellPadding="4" ForeColor="#333333"   GridLines="None"  AllowPaging="False" AutoGenerateColumns="true" Width="100%" AllowSorting="True">
+                                  <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                                        <EditRowStyle BackColor="#999999" />
+                                        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333366" />
+                                        <PagerStyle BackColor="#5D7B9D" ForeColor="black" HorizontalAlign="Center" />
+                                        <HeaderStyle BackColor="#669FFF" Font-Bold="True" ForeColor="White" HorizontalAlign="Left" />
+                                        <RowStyle HorizontalAlign="Left" BackColor="#FFFFFF" ForeColor="Black" /> 
+                                        <AlternatingRowStyle BackColor="#D2E3FF" ForeColor="Black"  />
+</asp:GridView>
+<%--
+<asp:GridView  runat="server" CellPadding="4" ForeColor="#333333" GridLines="None"  AllowPaging="True"  Width="100%">
+    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+    <EditRowStyle BackColor="#999999" />
+    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+    <PagerStyle BackColor="Gray" ForeColor="White" HorizontalAlign="Center" />
+    <HeaderStyle BackColor="Silver" Font-Bold="True" ForeColor="White" HorizontalAlign="left" />
+    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+</asp:GridView>
+
+<asp:GridView SkinID="gridViewskin1"   runat="server" CellPadding="4" ForeColor="#333333" GridLines="None"  AllowPaging="True" AutoGenerateColumns="false"  Width="100%">
+    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+    <EditRowStyle BackColor="#999999" />
+    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+    <PagerStyle BackColor="Gray" ForeColor="White" HorizontalAlign="Center" />
+    <HeaderStyle BackColor="Silver" Font-Bold="True" ForeColor="White" HorizontalAlign="left" />
+    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+</asp:GridView>
+<asp:GridView SkinID="gridViewskin2"   runat="server" CellPadding="4" ForeColor="#333333" GridLines="None"  AllowPaging="False" AutoGenerateColumns="false"  Width="100%">
+    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+    <EditRowStyle BackColor="#999999" />
+    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+    <PagerStyle BackColor="Gray" ForeColor="White" HorizontalAlign="Center" />
+    <HeaderStyle BackColor="Silver" Font-Bold="True" ForeColor="White" HorizontalAlign="left" />
+    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+</asp:GridView>
+<asp:GridView SkinID="prashGV"   runat="server" CellPadding="4" ForeColor="#333333" GridLines="None"  AllowPaging="False" AutoGenerateColumns="false"  Width="100%">
+    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+    <EditRowStyle BackColor="#999999" />
+    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+    <PagerStyle BackColor="Gray" ForeColor="White" HorizontalAlign="Center" />
+    <HeaderStyle BackColor="Silver" Font-Bold="True" ForeColor="White" HorizontalAlign="left" />
+    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+</asp:GridView>
+--%>

@@ -1,0 +1,17 @@
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\EgBL.dll
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\EgBL.pdb
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\EgDAL.dll
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\Microsoft.ReportViewer.WebForms.dll
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\Microsoft.ReportViewer.WinForms.dll
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\Newtonsoft.Json.dll
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\Microsoft.ReportViewer.Common.dll
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\Microsoft.Build.Utilities.v3.5.dll
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\ADODB.dll
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\EgDAL.pdb
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\Microsoft.ReportViewer.WebForms.xml
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\Microsoft.ReportViewer.WinForms.xml
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\Newtonsoft.Json.xml
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\bin\x86\Debug\Microsoft.Build.Utilities.v3.5.xml
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\obj\x86\Debug\EgBL.csprojResolveAssemblyReference.cache
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\obj\x86\Debug\EgBL.dll
+F:\Egrass\2018\Egras_2015_U_latest\EgBL\obj\x86\Debug\EgBL.pdb

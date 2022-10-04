@@ -1,0 +1,52 @@
+﻿ .TabArea
+        {
+                    background-color: White;
+                    font-size: x-small;
+                    border-left: 1px solid black;
+                    border-bottom: 1px solid black;
+                    border-right: 1px solid black;
+                    border-top:1px solid black;
+                    position:absolute;
+                    top:42px;
+                    height:400px;
+                    z-index:-25;
+        }
+      
+        .menuTabs
+        {
+            position:relative;
+            top:1px;
+            left:10px;
+            
+        }
+        .tab
+        {
+            border:Solid 0px black;
+            border-bottom:none;
+            padding:0px 10px;
+            background-color:#eeeeee;
+        }
+        .selectedTab
+        {
+            color: #fff;
+			background: green;
+			border: 1px solid #781351;
+			padding: 2px 6px
+        }
+        .tabBody
+        {
+            
+            border:Solid 0px black;
+            padding:20px;
+            background-color:white;
+        }
+        .login {  
+ background-color: White;  
+ color: #000000;  
+ border: 5px solid #999999;  
+ font-family: Verdana, Arial, Helvetica, sans-serif;  
+ text-align: right;  
+}
+ 
+   
+ 

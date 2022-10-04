@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:ns0="http://gras.webservice.ibs" targetNamespace="http://gras.webservice.ibs" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="verifyGRASDataResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="verifyGRASData">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="stEncdata" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element ibmSchExtn:docRoot="true" name="verifyGRASDataResponse" type="ns0:verifyGRASDataResponse" />
+  <xsd:element ibmSchExtn:docRoot="true" name="verifyGRASData" type="ns0:verifyGRASData" />
+</xsd:schema>

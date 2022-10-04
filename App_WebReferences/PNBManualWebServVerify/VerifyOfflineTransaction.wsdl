@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="VerifyTranStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="encstring" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyTranStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyTranStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="VerifyTranStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyTranStatus" />
+  </wsdl:message>
+  <wsdl:message name="VerifyTranStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyTranStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyTranStatusHttpGetIn">
+    <wsdl:part name="encstring" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="VerifyTranStatusHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="VerifyTranStatusHttpPostIn">
+    <wsdl:part name="encstring" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="VerifyTranStatusHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="VerifyOfflineTransactionSoap">
+    <wsdl:operation name="VerifyTranStatus">
+      <wsdl:input message="tns:VerifyTranStatusSoapIn" />
+      <wsdl:output message="tns:VerifyTranStatusSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="VerifyOfflineTransactionHttpGet">
+    <wsdl:operation name="VerifyTranStatus">
+      <wsdl:input message="tns:VerifyTranStatusHttpGetIn" />
+      <wsdl:output message="tns:VerifyTranStatusHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="VerifyOfflineTransactionHttpPost">
+    <wsdl:operation name="VerifyTranStatus">
+      <wsdl:input message="tns:VerifyTranStatusHttpPostIn" />
+      <wsdl:output message="tns:VerifyTranStatusHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VerifyOfflineTransactionSoap" type="tns:VerifyOfflineTransactionSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VerifyTranStatus">
+      <soap:operation soapAction="http://tempuri.org/VerifyTranStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VerifyOfflineTransactionSoap12" type="tns:VerifyOfflineTransactionSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VerifyTranStatus">
+      <soap12:operation soapAction="http://tempuri.org/VerifyTranStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VerifyOfflineTransactionHttpGet" type="tns:VerifyOfflineTransactionHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="VerifyTranStatus">
+      <http:operation location="/VerifyTranStatus" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VerifyOfflineTransactionHttpPost" type="tns:VerifyOfflineTransactionHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="VerifyTranStatus">
+      <http:operation location="/VerifyTranStatus" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VerifyOfflineTransaction">
+    <wsdl:port name="VerifyOfflineTransactionSoap" binding="tns:VerifyOfflineTransactionSoap">
+      <soap:address location="https://mypnb.in/egrasrj/VerifyOfflineTransaction.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VerifyOfflineTransactionSoap12" binding="tns:VerifyOfflineTransactionSoap12">
+      <soap12:address location="https://mypnb.in/egrasrj/VerifyOfflineTransaction.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VerifyOfflineTransactionHttpGet" binding="tns:VerifyOfflineTransactionHttpGet">
+      <http:address location="https://mypnb.in/egrasrj/VerifyOfflineTransaction.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VerifyOfflineTransactionHttpPost" binding="tns:VerifyOfflineTransactionHttpPost">
+      <http:address location="https://mypnb.in/egrasrj/VerifyOfflineTransaction.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

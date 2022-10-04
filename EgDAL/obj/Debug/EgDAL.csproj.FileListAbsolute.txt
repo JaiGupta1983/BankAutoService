@@ -1,0 +1,187 @@
+D:\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.dll
+D:\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.pdb
+D:\EgDAL\EgDAL\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+D:\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.dll
+D:\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\Change\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\Change\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\Change\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\EGrassWorkDateWise\Change\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\Change\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\LastChanges\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\LastChanges\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\LastChanges\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\EGrassWorkDateWise\LastChanges\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\LastChanges\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.pdb
+E:\Egrass\23july\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.dll
+E:\Egrass\23july\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.pdb
+E:\Egrass\23july\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Egrass\23july\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.dll
+E:\Egrass\23july\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.pdb
+E:\30 july\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.dll
+E:\30 july\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.pdb
+E:\30 july\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\30 july\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.dll
+E:\30 july\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\6 August 2012\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\6 August 2012\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\6 August 2012\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\EGrassWorkDateWise\6 August 2012\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\6 August 2012\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\13 August Egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\13 August Egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\13 August Egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\EGrassWorkDateWise\13 August Egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\13 August Egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.pdb
+E:\16 August\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.dll
+E:\16 August\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.pdb
+E:\16 August\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\16 August\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.dll
+E:\16 August\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\4 Oct Egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\4 Oct Egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\4 Oct Egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\EGrassWorkDateWise\4 Oct Egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\4 Oct Egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.pdb
+E:\12-9\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.dll
+E:\12-9\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.pdb
+E:\12-9\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\12-9\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.dll
+E:\12-9\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\4 Oct Egras\12-9\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\4 Oct Egras\12-9\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\4 Oct Egras\12-9\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\EGrassWorkDateWise\4 Oct Egras\12-9\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\4 Oct Egras\12-9\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\4 Oct Egras\24 09 egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\4 Oct Egras\24 09 egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\4 Oct Egras\24 09 egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\EGrassWorkDateWise\4 Oct Egras\24 09 egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\4 Oct Egras\24 09 egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.pdb
+E:\24 09 egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.dll
+E:\24 09 egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\bin\Debug\EgDAL.pdb
+E:\24 09 egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\24 09 egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.dll
+E:\24 09 egras\Egras\EgrasWebSite\EgDAL\EgDAL\EgDAL\obj\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\12 Oct\24 09 egras\Egras\EgrasWebSite\EgDAL\bin\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\12 Oct\24 09 egras\Egras\EgrasWebSite\EgDAL\bin\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\12 Oct\24 09 egras\Egras\EgrasWebSite\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\EGrassWorkDateWise\12 Oct\24 09 egras\Egras\EgrasWebSite\EgDAL\obj\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\12 Oct\24 09 egras\Egras\EgrasWebSite\EgDAL\obj\Debug\EgDAL.pdb
+E:\24 09 egras\Egras\EgrasWebSite\EgDAL\bin\Debug\EgDAL.dll
+E:\24 09 egras\Egras\EgrasWebSite\EgDAL\bin\Debug\EgDAL.pdb
+E:\24 09 egras\Egras\EgrasWebSite\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\24 09 egras\Egras\EgrasWebSite\EgDAL\obj\Debug\EgDAL.dll
+E:\24 09 egras\Egras\EgrasWebSite\EgDAL\obj\Debug\EgDAL.pdb
+E:\Working Application\egras\23Egras\EgrasWebSite\EgDAL\bin\Debug\EgDAL.dll
+E:\Working Application\egras\23Egras\EgrasWebSite\EgDAL\bin\Debug\EgDAL.pdb
+E:\Working Application\egras\23Egras\EgrasWebSite\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Working Application\egras\23Egras\EgrasWebSite\EgDAL\obj\Debug\EgDAL.dll
+E:\Working Application\egras\23Egras\EgrasWebSite\EgDAL\obj\Debug\EgDAL.pdb
+E:\23Egras\EgrasWebSite\EgDAL\bin\Debug\EgDAL.dll
+E:\23Egras\EgrasWebSite\EgDAL\bin\Debug\EgDAL.pdb
+E:\23Egras\EgrasWebSite\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\23Egras\EgrasWebSite\EgDAL\obj\Debug\EgDAL.dll
+E:\23Egras\EgrasWebSite\EgDAL\obj\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\1 nov\23Egras\EgrasWebSite\EgDAL\bin\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\1 nov\23Egras\EgrasWebSite\EgDAL\bin\Debug\EgDAL.pdb
+E:\EGrassWorkDateWise\1 nov\23Egras\EgrasWebSite\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\EGrassWorkDateWise\1 nov\23Egras\EgrasWebSite\EgDAL\obj\Debug\EgDAL.dll
+E:\EGrassWorkDateWise\1 nov\23Egras\EgrasWebSite\EgDAL\obj\Debug\EgDAL.pdb
+E:\Working Application\Egras Working\23Egras\EgrasWebSite\EgDAL\bin\Debug\EgDAL.dll
+E:\Working Application\Egras Working\23Egras\EgrasWebSite\EgDAL\bin\Debug\EgDAL.pdb
+E:\Working Application\Egras Working\23Egras\EgrasWebSite\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Working Application\Egras Working\23Egras\EgrasWebSite\EgDAL\obj\Debug\EgDAL.dll
+E:\Working Application\Egras Working\23Egras\EgrasWebSite\EgDAL\obj\Debug\EgDAL.pdb
+E:\Working Application\Server - Server\EgDAL\bin\Debug\EgDAL.dll
+E:\Working Application\Server - Server\EgDAL\bin\Debug\EgDAL.pdb
+E:\Working Application\Server - Server\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Working Application\Server - Server\EgDAL\obj\Debug\EgDAL.dll
+E:\Working Application\Server - Server\EgDAL\obj\Debug\EgDAL.pdb
+E:\Working\Server - Server\EgDAL\bin\Debug\EgDAL.dll
+E:\Working\Server - Server\EgDAL\bin\Debug\EgDAL.pdb
+E:\Working\Server - Server\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Server - Server\EgDAL\obj\Debug\EgDAL.dll
+E:\Working\Server - Server\EgDAL\obj\Debug\EgDAL.pdb
+F:\Working\Server - Server\EgDAL\bin\Debug\EgDAL.dll
+F:\Working\Server - Server\EgDAL\bin\Debug\EgDAL.pdb
+F:\Working\Server - Server\EgDAL\obj\Debug\ResolveAssemblyReference.cache
+F:\Working\Server - Server\EgDAL\obj\Debug\EgDAL.dll
+F:\Working\Server - Server\EgDAL\obj\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\VS15Converted18Sept\28Sept2017\Server - Server\EgDAL\bin\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Live\VS15Converted18Sept\28Sept2017\Server - Server\EgDAL\bin\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\VS15Converted18Sept\28Sept2017\Server - Server\EgDAL\obj\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Live\VS15Converted18Sept\28Sept2017\Server - Server\EgDAL\obj\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\23Oct2017\Egras_2015_U\EgDAL\bin\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Live\23Oct2017\Egras_2015_U\EgDAL\bin\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\23Oct2017\Egras_2015_U\EgDAL\obj\Debug\EgDAL.csprojResolveAssemblyReference.cache
+E:\Sandeep_Singh_Egras\Live\23Oct2017\Egras_2015_U\EgDAL\obj\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Live\23Oct2017\Egras_2015_U\EgDAL\obj\Debug\EgDAL.pdb
+F:\Egrass\2017\Egras_2015_U\EgDAL\bin\Debug\EgDAL.dll
+F:\Egrass\2017\Egras_2015_U\EgDAL\bin\Debug\EgDAL.pdb
+F:\Egrass\2017\Egras_2015_U\EgDAL\obj\Debug\EgDAL.dll
+F:\Egrass\2017\Egras_2015_U\EgDAL\obj\Debug\EgDAL.pdb
+F:\Egrass\2017\Egras_2015_U\EgDAL\obj\Debug\EgDAL.csprojResolveAssemblyReference.cache
+E:\Sandeep_Singh_Egras\Publish App\Egras_2015_U\EgDAL\bin\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Publish App\Egras_2015_U\EgDAL\bin\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Publish App\Egras_2015_U\EgDAL\obj\Debug\EgDAL.csprojResolveAssemblyReference.cache
+E:\Sandeep_Singh_Egras\Publish App\Egras_2015_U\EgDAL\obj\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Publish App\Egras_2015_U\EgDAL\obj\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\04jan2018\Egras_2015_U\EgDAL\bin\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Live\04jan2018\Egras_2015_U\EgDAL\bin\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\04jan2018\Egras_2015_U\EgDAL\obj\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Live\04jan2018\Egras_2015_U\EgDAL\obj\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\04jan2018\Egras_2015_U\EgDAL\obj\Debug\EgDAL.csprojResolveAssemblyReference.cache
+F:\Egrass\2018\Live\Egras_2015_U\EgDAL\bin\Debug\EgDAL.dll
+F:\Egrass\2018\Live\Egras_2015_U\EgDAL\bin\Debug\EgDAL.pdb
+F:\Egrass\2018\Live\Egras_2015_U\EgDAL\obj\Debug\EgDAL.dll
+F:\Egrass\2018\Live\Egras_2015_U\EgDAL\obj\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\Egras_2015_U\EgDAL\bin\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Live\Egras_2015_U\EgDAL\bin\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\Egras_2015_U\EgDAL\obj\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Live\Egras_2015_U\EgDAL\obj\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\05 Sept 2018\Egras_2015_U\EgDAL\bin\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Live\05 Sept 2018\Egras_2015_U\EgDAL\bin\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\05 Sept 2018\Egras_2015_U\EgDAL\obj\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Live\05 Sept 2018\Egras_2015_U\EgDAL\obj\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\05 Sept 2018\Egras_2015_U\EgDAL\obj\Debug\EgDAL.csprojResolveAssemblyReference.cache
+F:\Egrass\2018\Live 10 Oct 2018\Egras_2015_U\EgDAL\bin\Debug\EgDAL.dll
+F:\Egrass\2018\Live 10 Oct 2018\Egras_2015_U\EgDAL\bin\Debug\EgDAL.pdb
+F:\Egrass\2018\Live 10 Oct 2018\Egras_2015_U\EgDAL\obj\Debug\EgDAL.csprojResolveAssemblyReference.cache
+F:\Egrass\2018\Live 10 Oct 2018\Egras_2015_U\EgDAL\obj\Debug\EgDAL.dll
+F:\Egrass\2018\Live 10 Oct 2018\Egras_2015_U\EgDAL\obj\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\13 march 2019\Egras_2015_U\EgDAL\bin\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Live\13 march 2019\Egras_2015_U\EgDAL\bin\Debug\EgDAL.pdb
+E:\Sandeep_Singh_Egras\Live\13 march 2019\Egras_2015_U\EgDAL\obj\Debug\EgDAL.csprojResolveAssemblyReference.cache
+E:\Sandeep_Singh_Egras\Live\13 march 2019\Egras_2015_U\EgDAL\obj\Debug\EgDAL.dll
+E:\Sandeep_Singh_Egras\Live\13 march 2019\Egras_2015_U\EgDAL\obj\Debug\EgDAL.pdb
+F:\Egrass\2018\13 march 2019\Egras_2015_U\EgDAL\bin\Debug\EgDAL.dll
+F:\Egrass\2018\13 march 2019\Egras_2015_U\EgDAL\bin\Debug\EgDAL.pdb
+F:\Egrass\2018\13 march 2019\Egras_2015_U\EgDAL\obj\Debug\EgDAL.csprojResolveAssemblyReference.cache
+F:\Egrass\2018\13 march 2019\Egras_2015_U\EgDAL\obj\Debug\EgDAL.dll
+F:\Egrass\2018\13 march 2019\Egras_2015_U\EgDAL\obj\Debug\EgDAL.pdb
+C:\Users\ACER\Desktop\Manoj\15 july 2019\Egras_2015_U\EgDAL\bin\Debug\EgDAL.dll
+C:\Users\ACER\Desktop\Manoj\15 july 2019\Egras_2015_U\EgDAL\bin\Debug\EgDAL.pdb
+C:\Users\ACER\Desktop\Manoj\15 july 2019\Egras_2015_U\EgDAL\obj\Debug\EgDAL.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Desktop\Manoj\15 july 2019\Egras_2015_U\EgDAL\obj\Debug\EgDAL.dll
+C:\Users\ACER\Desktop\Manoj\15 july 2019\Egras_2015_U\EgDAL\obj\Debug\EgDAL.pdb
+F:\Egrass\2018\Egras_2015_U_latest\EgDAL\bin\Debug\EgDAL.dll
+F:\Egrass\2018\Egras_2015_U_latest\EgDAL\bin\Debug\EgDAL.pdb
+F:\Egrass\2018\Egras_2015_U_latest\EgDAL\obj\Debug\EgDAL.csprojResolveAssemblyReference.cache
+F:\Egrass\2018\Egras_2015_U_latest\EgDAL\obj\Debug\EgDAL.dll
+F:\Egrass\2018\Egras_2015_U_latest\EgDAL\obj\Debug\EgDAL.pdb
+F:\Egrass\2020\Egras_2015_U_latest\EgDAL\bin\Debug\EgDAL.dll
+F:\Egrass\2020\Egras_2015_U_latest\EgDAL\bin\Debug\EgDAL.pdb
+F:\Egrass\2020\Egras_2015_U_latest\EgDAL\obj\Debug\EgDAL.csprojResolveAssemblyReference.cache
+F:\Egrass\2020\Egras_2015_U_latest\EgDAL\obj\Debug\EgDAL.dll
+F:\Egrass\2020\Egras_2015_U_latest\EgDAL\obj\Debug\EgDAL.pdb
+E:\Egrass\2020\Egras_2015_U_latest\EgDAL\bin\Debug\EgDAL.dll
+E:\Egrass\2020\Egras_2015_U_latest\EgDAL\bin\Debug\EgDAL.pdb
+E:\Egrass\2020\Egras_2015_U_latest\EgDAL\obj\Debug\EgDAL.csprojResolveAssemblyReference.cache
+E:\Egrass\2020\Egras_2015_U_latest\EgDAL\obj\Debug\EgDAL.dll
+E:\Egrass\2020\Egras_2015_U_latest\EgDAL\obj\Debug\EgDAL.pdb
+D:\Backup\EDrive\EgrasNew\2022\EgrasService\EgrasBankService\EgDAL\bin\Debug\EgDAL.dll
+D:\Backup\EDrive\EgrasNew\2022\EgrasService\EgrasBankService\EgDAL\bin\Debug\EgDAL.pdb
+D:\Backup\EDrive\EgrasNew\2022\EgrasService\EgrasBankService\EgDAL\obj\Debug\EgDAL.csprojResolveAssemblyReference.cache
+D:\Backup\EDrive\EgrasNew\2022\EgrasService\EgrasBankService\EgDAL\obj\Debug\EgDAL.dll
+D:\Backup\EDrive\EgrasNew\2022\EgrasService\EgrasBankService\EgDAL\obj\Debug\EgDAL.pdb

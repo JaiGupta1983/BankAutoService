@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="10.130.7.149" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="10.130.7.149" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="10.130.7.149">
+      <s:element name="UpdateGRN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="encData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BsrCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateGRNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateGRNResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthSoapHd" type="tns:AuthSoapHd" />
+      <s:complexType name="AuthSoapHd">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="strUserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strBsrCode" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UpdateGRNSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateGRN" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGRNSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateGRNResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGRNAuthSoapHd">
+    <wsdl:part name="AuthSoapHd" element="tns:AuthSoapHd" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGRNHttpGetIn">
+    <wsdl:part name="encData" type="s:string" />
+    <wsdl:part name="BsrCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGRNHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGRNHttpPostIn">
+    <wsdl:part name="encData" type="s:string" />
+    <wsdl:part name="BsrCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateGRNHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="UpdateGRN">
+      <wsdl:input message="tns:UpdateGRNSoapIn" />
+      <wsdl:output message="tns:UpdateGRNSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpGet">
+    <wsdl:operation name="UpdateGRN">
+      <wsdl:input message="tns:UpdateGRNHttpGetIn" />
+      <wsdl:output message="tns:UpdateGRNHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpPost">
+    <wsdl:operation name="UpdateGRN">
+      <wsdl:input message="tns:UpdateGRNHttpPostIn" />
+      <wsdl:output message="tns:UpdateGRNHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateGRN">
+      <soap:operation soapAction="10.130.7.149/UpdateGRN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdateGRNAuthSoapHd" part="AuthSoapHd" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateGRN">
+      <soap12:operation soapAction="10.130.7.149/UpdateGRN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdateGRNAuthSoapHd" part="AuthSoapHd" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpGet" type="tns:ServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="UpdateGRN">
+      <http:operation location="/UpdateGRN" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpPost" type="tns:ServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="UpdateGRN">
+      <http:operation location="/UpdateGRN" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://164.100.153.12/eservice/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://164.100.153.12/eservice/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpGet" binding="tns:ServiceHttpGet">
+      <http:address location="http://164.100.153.12/eservice/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpPost" binding="tns:ServiceHttpPost">
+      <http:address location="http://164.100.153.12/eservice/service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

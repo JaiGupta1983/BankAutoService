@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GETTreasuryData1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fromdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="todate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETTreasuryData1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GETTreasuryData1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EgFillMajorHeadByDepartment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deptcode" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EgFillMajorHeadByDepartmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EgFillMajorHeadByDepartmentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getOfficeIdDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="officeid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getOfficeIdDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getOfficeIdDetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GETTreasuryData1SoapIn">
+    <wsdl:part name="parameters" element="tns:GETTreasuryData1" />
+  </wsdl:message>
+  <wsdl:message name="GETTreasuryData1SoapOut">
+    <wsdl:part name="parameters" element="tns:GETTreasuryData1Response" />
+  </wsdl:message>
+  <wsdl:message name="EgFillMajorHeadByDepartmentSoapIn">
+    <wsdl:part name="parameters" element="tns:EgFillMajorHeadByDepartment" />
+  </wsdl:message>
+  <wsdl:message name="EgFillMajorHeadByDepartmentSoapOut">
+    <wsdl:part name="parameters" element="tns:EgFillMajorHeadByDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOfficeIdDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:getOfficeIdDetails" />
+  </wsdl:message>
+  <wsdl:message name="getOfficeIdDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:getOfficeIdDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GETTreasuryData1HttpGetIn">
+    <wsdl:part name="fromdate" type="s:string" />
+    <wsdl:part name="todate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GETTreasuryData1HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="EgFillMajorHeadByDepartmentHttpGetIn">
+    <wsdl:part name="deptcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EgFillMajorHeadByDepartmentHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="getOfficeIdDetailsHttpGetIn">
+    <wsdl:part name="officeid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getOfficeIdDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GETTreasuryData1HttpPostIn">
+    <wsdl:part name="fromdate" type="s:string" />
+    <wsdl:part name="todate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GETTreasuryData1HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="EgFillMajorHeadByDepartmentHttpPostIn">
+    <wsdl:part name="deptcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EgFillMajorHeadByDepartmentHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="getOfficeIdDetailsHttpPostIn">
+    <wsdl:part name="officeid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getOfficeIdDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="GETTreasuryData1">
+      <wsdl:input message="tns:GETTreasuryData1SoapIn" />
+      <wsdl:output message="tns:GETTreasuryData1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EgFillMajorHeadByDepartment">
+      <wsdl:input message="tns:EgFillMajorHeadByDepartmentSoapIn" />
+      <wsdl:output message="tns:EgFillMajorHeadByDepartmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getOfficeIdDetails">
+      <wsdl:input message="tns:getOfficeIdDetailsSoapIn" />
+      <wsdl:output message="tns:getOfficeIdDetailsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebService1HttpGet">
+    <wsdl:operation name="GETTreasuryData1">
+      <wsdl:input message="tns:GETTreasuryData1HttpGetIn" />
+      <wsdl:output message="tns:GETTreasuryData1HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EgFillMajorHeadByDepartment">
+      <wsdl:input message="tns:EgFillMajorHeadByDepartmentHttpGetIn" />
+      <wsdl:output message="tns:EgFillMajorHeadByDepartmentHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getOfficeIdDetails">
+      <wsdl:input message="tns:getOfficeIdDetailsHttpGetIn" />
+      <wsdl:output message="tns:getOfficeIdDetailsHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebService1HttpPost">
+    <wsdl:operation name="GETTreasuryData1">
+      <wsdl:input message="tns:GETTreasuryData1HttpPostIn" />
+      <wsdl:output message="tns:GETTreasuryData1HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EgFillMajorHeadByDepartment">
+      <wsdl:input message="tns:EgFillMajorHeadByDepartmentHttpPostIn" />
+      <wsdl:output message="tns:EgFillMajorHeadByDepartmentHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getOfficeIdDetails">
+      <wsdl:input message="tns:getOfficeIdDetailsHttpPostIn" />
+      <wsdl:output message="tns:getOfficeIdDetailsHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GETTreasuryData1">
+      <soap:operation soapAction="http://tempuri.org/GETTreasuryData1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EgFillMajorHeadByDepartment">
+      <soap:operation soapAction="http://tempuri.org/EgFillMajorHeadByDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOfficeIdDetails">
+      <soap:operation soapAction="http://tempuri.org/getOfficeIdDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GETTreasuryData1">
+      <soap12:operation soapAction="http://tempuri.org/GETTreasuryData1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EgFillMajorHeadByDepartment">
+      <soap12:operation soapAction="http://tempuri.org/EgFillMajorHeadByDepartment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOfficeIdDetails">
+      <soap12:operation soapAction="http://tempuri.org/getOfficeIdDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1HttpGet" type="tns:WebService1HttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GETTreasuryData1">
+      <http:operation location="/GETTreasuryData1" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EgFillMajorHeadByDepartment">
+      <http:operation location="/EgFillMajorHeadByDepartment" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOfficeIdDetails">
+      <http:operation location="/getOfficeIdDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1HttpPost" type="tns:WebService1HttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GETTreasuryData1">
+      <http:operation location="/GETTreasuryData1" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EgFillMajorHeadByDepartment">
+      <http:operation location="/EgFillMajorHeadByDepartment" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOfficeIdDetails">
+      <http:operation location="/getOfficeIdDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="http://rajkosh.raj.nic.in/Services/WebService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="http://rajkosh.raj.nic.in/Services/WebService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1HttpGet" binding="tns:WebService1HttpGet">
+      <http:address location="http://rajkosh.raj.nic.in/Services/WebService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1HttpPost" binding="tns:WebService1HttpPost">
+      <http:address location="http://rajkosh.raj.nic.in/Services/WebService1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

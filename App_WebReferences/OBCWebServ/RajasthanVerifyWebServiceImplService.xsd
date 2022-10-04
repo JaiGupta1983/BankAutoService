@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:ns0="http://ws.obconline.co.in/" targetNamespace="http://ws.obconline.co.in/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="rajverificationrequest">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="encryptData" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="rajverificationrequestResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="rajverificationrequest" type="ns0:rajverificationrequest" />
+  <xsd:element name="rajverificationrequestResponse" type="ns0:rajverificationrequestResponse" />
+</xsd:schema>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UploadData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="encdata" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UploadDataSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadData" />
+  </wsdl:message>
+  <wsdl:message name="UploadDataSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadDataHttpGetIn">
+    <wsdl:part name="encdata" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadDataHttpPostIn">
+    <wsdl:part name="encdata" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="ReceiveDataSoap">
+    <wsdl:operation name="UploadData">
+      <wsdl:input message="tns:UploadDataSoapIn" />
+      <wsdl:output message="tns:UploadDataSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ReceiveDataHttpGet">
+    <wsdl:operation name="UploadData">
+      <wsdl:input message="tns:UploadDataHttpGetIn" />
+      <wsdl:output message="tns:UploadDataHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ReceiveDataHttpPost">
+    <wsdl:operation name="UploadData">
+      <wsdl:input message="tns:UploadDataHttpPostIn" />
+      <wsdl:output message="tns:UploadDataHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ReceiveDataSoap" type="tns:ReceiveDataSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadData">
+      <soap:operation soapAction="http://tempuri.org/UploadData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ReceiveDataSoap12" type="tns:ReceiveDataSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadData">
+      <soap12:operation soapAction="http://tempuri.org/UploadData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ReceiveDataHttpGet" type="tns:ReceiveDataHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="UploadData">
+      <http:operation location="/UploadData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ReceiveDataHttpPost" type="tns:ReceiveDataHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="UploadData">
+      <http:operation location="/UploadData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ReceiveData">
+    <wsdl:port name="ReceiveDataSoap" binding="tns:ReceiveDataSoap">
+      <soap:address location="https://mypnb.in/egrasrj/ReceiveData.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ReceiveDataSoap12" binding="tns:ReceiveDataSoap12">
+      <soap12:address location="https://mypnb.in/egrasrj/ReceiveData.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ReceiveDataHttpGet" binding="tns:ReceiveDataHttpGet">
+      <http:address location="https://mypnb.in/egrasrj/ReceiveData.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ReceiveDataHttpPost" binding="tns:ReceiveDataHttpPost">
+      <http:address location="https://mypnb.in/egrasrj/ReceiveData.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

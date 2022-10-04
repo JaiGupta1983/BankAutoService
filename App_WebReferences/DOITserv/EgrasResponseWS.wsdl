@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="http://emitra.egras.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EgrasResponseWS" targetNamespace="http://emitra.egras.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xs:schema targetNamespace="http://emitra.egras.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="setAEgrasRespose" type="tns:setAEgrasRespose" />
+      <xs:element name="setAEgrasResposeResponse" type="tns:setAEgrasResposeResponse" />
+      <xs:element name="setResponse" type="tns:setResponse" />
+      <xs:element name="setResponseResponse" type="tns:setResponseResponse" />
+      <xs:complexType name="setResponse">
+        <xs:sequence>
+          <xs:element name="auid" type="xs:long" />
+          <xs:element minOccurs="0" name="cin" type="xs:string" />
+          <xs:element name="grn" type="xs:long" />
+          <xs:element name="amt" type="xs:double" />
+          <xs:element minOccurs="0" name="bankcode" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setResponseResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setAEgrasRespose">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="aesstring" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="setAEgrasResposeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </types>
+  <message name="EgrasResponseWS_setResponseResponse">
+    <part name="setResponseResponse" element="tns:setResponseResponse" />
+  </message>
+  <message name="EgrasResponseWS_setAEgrasRespose">
+    <part name="setAEgrasRespose" element="tns:setAEgrasRespose" />
+  </message>
+  <message name="EgrasResponseWS_setResponse">
+    <part name="setResponse" element="tns:setResponse" />
+  </message>
+  <message name="EgrasResponseWS_setAEgrasResposeResponse">
+    <part name="setAEgrasResposeResponse" element="tns:setAEgrasResposeResponse" />
+  </message>
+  <portType name="EgrasResponseWS">
+    <operation name="setAEgrasRespose" parameterOrder="setAEgrasRespose">
+      <input message="tns:EgrasResponseWS_setAEgrasRespose" />
+      <output message="tns:EgrasResponseWS_setAEgrasResposeResponse" />
+    </operation>
+    <operation name="setResponse" parameterOrder="setResponse">
+      <input message="tns:EgrasResponseWS_setResponse" />
+      <output message="tns:EgrasResponseWS_setResponseResponse" />
+    </operation>
+  </portType>
+  <binding name="EgrasResponseWSBinding" type="tns:EgrasResponseWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="setAEgrasRespose">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setResponse">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="EgrasResponseWS">
+    <port name="EgrasResponseWSPort" binding="tns:EgrasResponseWSBinding">
+      <soap:address location="http://rajonline.rajasthan.gov.in/EMitraEgrasWS/EgrasResponseWS" />
+    </port>
+  </service>
+</definitions>

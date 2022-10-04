@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.example.org/EGRASS/" name="EGRASS" targetNamespace="http://www.example.org/EGRASS/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <generatedXSD location="EGRASSSOAP_NEW_InlineSchema1.xsd" />
+        <binding hasEncoding="false" imported="true" name="EGRASSSOAP" originalBindingStyle="document" />
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" targetNamespace="http://www.example.org/EGRASS/">
+      <xsd:include schemaLocation="https://paymentsystems.centralbankofindia.co.in/Egrass?xsd=xsd0" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="EGRASSFETCHDETAILSRequest">
+    <wsdl:part name="parameters" element="tns:EGRASSFETCHDETAILS" />
+  </wsdl:message>
+  <wsdl:message name="EGRASSFETCHDETAILSResponse">
+    <wsdl:part name="parameters" element="tns:EGRASSFETCHDETAILSResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EGRASS">
+    <wsdl:operation name="EGRASSFETCHDETAILS">
+      <wsdl:input message="tns:EGRASSFETCHDETAILSRequest" />
+      <wsdl:output message="tns:EGRASSFETCHDETAILSResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EGRASSSOAP" type="tns:EGRASS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EGRASSFETCHDETAILS">
+      <soap:operation soapAction="http://www.example.org/EGRASS/EGRASSFETCHDETAILS" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EGRASS">
+    <wsdl:port name="EGRASSSOAP" binding="tns:EGRASSSOAP">
+      <soap:address location="https://paymentsystems.centralbankofindia.co.in/Egrass" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

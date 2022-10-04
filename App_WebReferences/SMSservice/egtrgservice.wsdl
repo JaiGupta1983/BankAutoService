@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetServiceString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="grn" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Tcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiceStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSMSDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Vcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSMSDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSMSDetailsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGrnChallanServiceString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="grn" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Tcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGrnChallanServiceStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGrnChallanServiceStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePDAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pdaccount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="TreasuryCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePDAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeletePDAccountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EgrasData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="encData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EgrasDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EgrasDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMinusExpenditureChallan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="encData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMinusExpenditureChallanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMinusExpenditureChallanResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="int" type="s:int" />
+      <s:element name="base64Binary" nillable="true" type="s:base64Binary" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetServiceStringSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceString" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceStringSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSMSDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSMSDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGrnChallanServiceStringSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGrnChallanServiceString" />
+  </wsdl:message>
+  <wsdl:message name="GetGrnChallanServiceStringSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGrnChallanServiceStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeletePDAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:DeletePDAccount" />
+  </wsdl:message>
+  <wsdl:message name="DeletePDAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:DeletePDAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="EgrasDataSoapIn">
+    <wsdl:part name="parameters" element="tns:EgrasData" />
+  </wsdl:message>
+  <wsdl:message name="EgrasDataSoapOut">
+    <wsdl:part name="parameters" element="tns:EgrasDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMinusExpenditureChallanSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMinusExpenditureChallan" />
+  </wsdl:message>
+  <wsdl:message name="GetMinusExpenditureChallanSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMinusExpenditureChallanResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceStringHttpGetIn">
+    <wsdl:part name="grn" type="s:string" />
+    <wsdl:part name="Tcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceStringHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSDetailsHttpGetIn">
+    <wsdl:part name="Vcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGrnChallanServiceStringHttpGetIn">
+    <wsdl:part name="grn" type="s:string" />
+    <wsdl:part name="Tcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGrnChallanServiceStringHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DeletePDAccountHttpGetIn">
+    <wsdl:part name="pdaccount" type="s:string" />
+    <wsdl:part name="TreasuryCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeletePDAccountHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="EgrasDataHttpGetIn">
+    <wsdl:part name="encData" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EgrasDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMinusExpenditureChallanHttpGetIn">
+    <wsdl:part name="encData" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMinusExpenditureChallanHttpGetOut">
+    <wsdl:part name="Body" element="tns:base64Binary" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceStringHttpPostIn">
+    <wsdl:part name="grn" type="s:string" />
+    <wsdl:part name="Tcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceStringHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSDetailsHttpPostIn">
+    <wsdl:part name="Vcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGrnChallanServiceStringHttpPostIn">
+    <wsdl:part name="grn" type="s:string" />
+    <wsdl:part name="Tcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGrnChallanServiceStringHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DeletePDAccountHttpPostIn">
+    <wsdl:part name="pdaccount" type="s:string" />
+    <wsdl:part name="TreasuryCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeletePDAccountHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="EgrasDataHttpPostIn">
+    <wsdl:part name="encData" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EgrasDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMinusExpenditureChallanHttpPostIn">
+    <wsdl:part name="encData" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMinusExpenditureChallanHttpPostOut">
+    <wsdl:part name="Body" element="tns:base64Binary" />
+  </wsdl:message>
+  <wsdl:portType name="EgTrgServiceSoap">
+    <wsdl:operation name="GetServiceString">
+      <wsdl:input message="tns:GetServiceStringSoapIn" />
+      <wsdl:output message="tns:GetServiceStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSDetails">
+      <wsdl:input message="tns:GetSMSDetailsSoapIn" />
+      <wsdl:output message="tns:GetSMSDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGrnChallanServiceString">
+      <wsdl:input message="tns:GetGrnChallanServiceStringSoapIn" />
+      <wsdl:output message="tns:GetGrnChallanServiceStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePDAccount">
+      <wsdl:input message="tns:DeletePDAccountSoapIn" />
+      <wsdl:output message="tns:DeletePDAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EgrasData">
+      <wsdl:input message="tns:EgrasDataSoapIn" />
+      <wsdl:output message="tns:EgrasDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMinusExpenditureChallan">
+      <wsdl:input message="tns:GetMinusExpenditureChallanSoapIn" />
+      <wsdl:output message="tns:GetMinusExpenditureChallanSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="EgTrgServiceHttpGet">
+    <wsdl:operation name="GetServiceString">
+      <wsdl:input message="tns:GetServiceStringHttpGetIn" />
+      <wsdl:output message="tns:GetServiceStringHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSDetails">
+      <wsdl:input message="tns:GetSMSDetailsHttpGetIn" />
+      <wsdl:output message="tns:GetSMSDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGrnChallanServiceString">
+      <wsdl:input message="tns:GetGrnChallanServiceStringHttpGetIn" />
+      <wsdl:output message="tns:GetGrnChallanServiceStringHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePDAccount">
+      <wsdl:input message="tns:DeletePDAccountHttpGetIn" />
+      <wsdl:output message="tns:DeletePDAccountHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EgrasData">
+      <wsdl:input message="tns:EgrasDataHttpGetIn" />
+      <wsdl:output message="tns:EgrasDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMinusExpenditureChallan">
+      <wsdl:input message="tns:GetMinusExpenditureChallanHttpGetIn" />
+      <wsdl:output message="tns:GetMinusExpenditureChallanHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="EgTrgServiceHttpPost">
+    <wsdl:operation name="GetServiceString">
+      <wsdl:input message="tns:GetServiceStringHttpPostIn" />
+      <wsdl:output message="tns:GetServiceStringHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSDetails">
+      <wsdl:input message="tns:GetSMSDetailsHttpPostIn" />
+      <wsdl:output message="tns:GetSMSDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGrnChallanServiceString">
+      <wsdl:input message="tns:GetGrnChallanServiceStringHttpPostIn" />
+      <wsdl:output message="tns:GetGrnChallanServiceStringHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePDAccount">
+      <wsdl:input message="tns:DeletePDAccountHttpPostIn" />
+      <wsdl:output message="tns:DeletePDAccountHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EgrasData">
+      <wsdl:input message="tns:EgrasDataHttpPostIn" />
+      <wsdl:output message="tns:EgrasDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMinusExpenditureChallan">
+      <wsdl:input message="tns:GetMinusExpenditureChallanHttpPostIn" />
+      <wsdl:output message="tns:GetMinusExpenditureChallanHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EgTrgServiceSoap" type="tns:EgTrgServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetServiceString">
+      <soap:operation soapAction="http://tempuri.org/GetServiceString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSDetails">
+      <soap:operation soapAction="http://tempuri.org/GetSMSDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGrnChallanServiceString">
+      <soap:operation soapAction="http://tempuri.org/GetGrnChallanServiceString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePDAccount">
+      <soap:operation soapAction="http://tempuri.org/DeletePDAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EgrasData">
+      <soap:operation soapAction="http://tempuri.org/EgrasData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMinusExpenditureChallan">
+      <soap:operation soapAction="http://tempuri.org/GetMinusExpenditureChallan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EgTrgServiceSoap12" type="tns:EgTrgServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetServiceString">
+      <soap12:operation soapAction="http://tempuri.org/GetServiceString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetSMSDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGrnChallanServiceString">
+      <soap12:operation soapAction="http://tempuri.org/GetGrnChallanServiceString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePDAccount">
+      <soap12:operation soapAction="http://tempuri.org/DeletePDAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EgrasData">
+      <soap12:operation soapAction="http://tempuri.org/EgrasData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMinusExpenditureChallan">
+      <soap12:operation soapAction="http://tempuri.org/GetMinusExpenditureChallan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EgTrgServiceHttpGet" type="tns:EgTrgServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetServiceString">
+      <http:operation location="/GetServiceString" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSDetails">
+      <http:operation location="/GetSMSDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGrnChallanServiceString">
+      <http:operation location="/GetGrnChallanServiceString" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePDAccount">
+      <http:operation location="/DeletePDAccount" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EgrasData">
+      <http:operation location="/EgrasData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMinusExpenditureChallan">
+      <http:operation location="/GetMinusExpenditureChallan" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EgTrgServiceHttpPost" type="tns:EgTrgServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetServiceString">
+      <http:operation location="/GetServiceString" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSDetails">
+      <http:operation location="/GetSMSDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGrnChallanServiceString">
+      <http:operation location="/GetGrnChallanServiceString" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePDAccount">
+      <http:operation location="/DeletePDAccount" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EgrasData">
+      <http:operation location="/EgrasData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMinusExpenditureChallan">
+      <http:operation location="/GetMinusExpenditureChallan" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EgTrgService">
+    <wsdl:port name="EgTrgServiceSoap" binding="tns:EgTrgServiceSoap">
+      <soap:address location="https://egras.rajasthan.gov.in/Eservice/egtrgservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EgTrgServiceSoap12" binding="tns:EgTrgServiceSoap12">
+      <soap12:address location="https://egras.rajasthan.gov.in/Eservice/egtrgservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EgTrgServiceHttpGet" binding="tns:EgTrgServiceHttpGet">
+      <http:address location="https://egras.rajasthan.gov.in/Eservice/egtrgservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EgTrgServiceHttpPost" binding="tns:EgTrgServiceHttpPost">
+      <http:address location="https://egras.rajasthan.gov.in/Eservice/egtrgservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

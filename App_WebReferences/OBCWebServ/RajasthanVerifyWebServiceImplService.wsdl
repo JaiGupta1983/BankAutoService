@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://ws.obconline.co.in/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="RajasthanVerifyWebServiceImplService" targetNamespace="http://ws.obconline.co.in/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="https://www.obconline.co.in:443/BankAwayRetail/RajasthanVerifyWebServiceImplService?xsd=1" namespace="http://ws.obconline.co.in/" />
+    </xsd:schema>
+  </types>
+  <message name="rajverificationrequest">
+    <part name="parameters" element="tns:rajverificationrequest" />
+  </message>
+  <message name="rajverificationrequestResponse">
+    <part name="parameters" element="tns:rajverificationrequestResponse" />
+  </message>
+  <portType name="RajasthanVerifyWebService">
+    <operation name="rajverificationrequest">
+      <input wsam:Action="http://ws.obconline.co.in/RajasthanVerifyWebService/rajverificationrequestRequest" message="tns:rajverificationrequest" />
+      <output wsam:Action="http://ws.obconline.co.in/RajasthanVerifyWebService/rajverificationrequestResponse" message="tns:rajverificationrequestResponse" />
+    </operation>
+  </portType>
+  <binding name="RajasthanVerifyWebServiceImplPortBinding" type="tns:RajasthanVerifyWebService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="rajverificationrequest">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="RajasthanVerifyWebServiceImplService">
+    <port name="RajasthanVerifyWebServiceImplPort" binding="tns:RajasthanVerifyWebServiceImplPortBinding">
+      <soap:address location="https://www.obconline.co.in:443/BankAwayRetail/RajasthanVerifyWebServiceImplService" />
+    </port>
+  </service>
+</definitions>

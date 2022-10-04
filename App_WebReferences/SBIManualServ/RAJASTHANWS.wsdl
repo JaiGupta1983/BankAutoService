@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:ns="http://webservice.tcs.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://webservice.tcs.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+		Please Type your service description here
+	</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://webservice.tcs.com">
+      <xs:element name="onlineresponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="strRequest" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="onlineresponseResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="challanposting">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="strRequest" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="challanpostingResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="challanenquiry">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="strRequest" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="challanenquiryResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="challanenquiryRequest">
+    <wsdl:part name="parameters" element="ns:challanenquiry" />
+  </wsdl:message>
+  <wsdl:message name="challanenquiryResponse">
+    <wsdl:part name="parameters" element="ns:challanenquiryResponse" />
+  </wsdl:message>
+  <wsdl:message name="challanpostingRequest">
+    <wsdl:part name="parameters" element="ns:challanposting" />
+  </wsdl:message>
+  <wsdl:message name="challanpostingResponse">
+    <wsdl:part name="parameters" element="ns:challanpostingResponse" />
+  </wsdl:message>
+  <wsdl:message name="onlineresponseRequest">
+    <wsdl:part name="parameters" element="ns:onlineresponse" />
+  </wsdl:message>
+  <wsdl:message name="onlineresponseResponse">
+    <wsdl:part name="parameters" element="ns:onlineresponseResponse" />
+  </wsdl:message>
+  <wsdl:portType name="RAJASTHANWSPortType">
+    <wsdl:operation name="challanenquiry">
+      <wsdl:input wsaw:Action="urn:challanenquiry" message="ns:challanenquiryRequest" />
+      <wsdl:output wsaw:Action="urn:challanenquiryResponse" message="ns:challanenquiryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="challanposting">
+      <wsdl:input wsaw:Action="urn:challanposting" message="ns:challanpostingRequest" />
+      <wsdl:output wsaw:Action="urn:challanpostingResponse" message="ns:challanpostingResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="onlineresponse">
+      <wsdl:input wsaw:Action="urn:onlineresponse" message="ns:onlineresponseRequest" />
+      <wsdl:output wsaw:Action="urn:onlineresponseResponse" message="ns:onlineresponseResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RAJASTHANWSSoap11Binding" type="ns:RAJASTHANWSPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="challanenquiry">
+      <soap:operation soapAction="urn:challanenquiry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="challanposting">
+      <soap:operation soapAction="urn:challanposting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="onlineresponse">
+      <soap:operation soapAction="urn:onlineresponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RAJASTHANWSSoap12Binding" type="ns:RAJASTHANWSPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="challanenquiry">
+      <soap12:operation soapAction="urn:challanenquiry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="challanposting">
+      <soap12:operation soapAction="urn:challanposting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="onlineresponse">
+      <soap12:operation soapAction="urn:onlineresponse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RAJASTHANWSHttpBinding" type="ns:RAJASTHANWSPortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="challanenquiry">
+      <http:operation location="RAJASTHANWS/challanenquiry" />
+      <wsdl:input>
+        <mime:content part="challanenquiry" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="challanenquiry" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="challanposting">
+      <http:operation location="RAJASTHANWS/challanposting" />
+      <wsdl:input>
+        <mime:content part="challanposting" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="challanposting" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="onlineresponse">
+      <http:operation location="RAJASTHANWS/onlineresponse" />
+      <wsdl:input>
+        <mime:content part="onlineresponse" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="onlineresponse" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RAJASTHANWS">
+    <wsdl:port name="RAJASTHANWSHttpsSoap11Endpoint" binding="ns:RAJASTHANWSSoap11Binding">
+      <soap:address location="http://115.114.131.65:8443/EGRAS/services/RAJASTHANWS.RAJASTHANWSHttpsSoap11Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="RAJASTHANWSHttpsSoap12Endpoint" binding="ns:RAJASTHANWSSoap12Binding">
+      <soap12:address location="http://115.114.131.65:8443/EGRAS/services/RAJASTHANWS.RAJASTHANWSHttpsSoap12Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="RAJASTHANWSHttpsEndpoint" binding="ns:RAJASTHANWSHttpBinding">
+      <http:address location="http://115.114.131.65:8443/EGRAS/services/RAJASTHANWS.RAJASTHANWSHttpsEndpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

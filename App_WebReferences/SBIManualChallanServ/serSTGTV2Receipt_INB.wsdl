@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="serSTGTV2Receipt_INB" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IserSTGTV2Receipt_INB_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="ProcessINBTrxn">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessINBTrxnResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ProcessINBTrxnResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessINBTrxnWest_Bengal">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessINBTrxnWest_BengalResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ProcessINBTrxnWest_BengalResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessINBRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessINBRequestResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ProcessINBRequestResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessRajasthanData">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessRajasthanDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ProcessRajasthanDataResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineEnquiry_Rajasthan">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineEnquiry_RajasthanResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="OnlineEnquiry_RajasthanResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineEnquiry_TamilNadu">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineEnquiry_TamilNaduResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="OnlineEnquiry_TamilNaduResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessINBOnlineEnquiry">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessINBOnlineEnquiryResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ProcessINBOnlineEnquiryResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessGoaData">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessGoaDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ProcessGoaDataResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessHaryanaData">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessHaryanaDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ProcessHaryanaDataResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineEnquiry_Haryana">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineEnquiry_HaryanaResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="OnlineEnquiry_HaryanaResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessnewChallanKarnatakaINBData">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessnewChallanKarnatakaINBDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ProcessnewChallanKarnatakaINBDataResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SaveChlnMatrixChqDD">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBxml" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SaveChlnMatrixChqDDResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="SaveChlnMatrixChqDDResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SaveChlnMatrixCCDC">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBXml" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SaveChlnMatrixCCDCResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="SaveChlnMatrixCCDCResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessKarnatakaStopPayment">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessKarnatakaStopPaymentResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ProcessKarnatakaStopPaymentResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessKarnatakaCanStopPayment">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessKarnatakaCanStopPaymentResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ProcessKarnatakaCanStopPaymentResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="StopPaymentReqDepCheq">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="xml" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="StopPaymentReqDepCheqResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="StopPaymentReqDepCheqResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CancelStopPaymentReqDepCheq">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="xml" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CancelStopPaymentReqDepCheqResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="CancelStopPaymentReqDepCheqResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineEnquiry_KII">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineEnquiry_KIIResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="OnlineEnquiry_KIIResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessMaharashtraData">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessMaharashtraDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ProcessMaharashtraDataResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineEnquiry_Maharashtra">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineEnquiry_MaharashtraResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="OnlineEnquiry_MaharashtraResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SaveCashMatrixRCT010">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBxml" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SaveCashMatrixRCT010Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="SaveCashMatrixRCT010Result" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Save_KII_ISR001">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBxml" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Save_KII_ISR001Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Save_KII_ISR001Result" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Save_KII_ISR002">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBxml" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Save_KII_ISR002Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Save_KII_ISR002Result" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Save_KII_DEP001">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBxml" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Save_KII_DEP001Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Save_KII_DEP001Result" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Save_KII_DEP007">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBxml" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Save_KII_DEP007Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Save_KII_DEP007Result" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessJharkhandData">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ProcessJharkhandDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ProcessJharkhandDataResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineEnquiry_Jharkhand">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="INBData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="OnlineEnquiry_JharkhandResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="OnlineEnquiry_JharkhandResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AutoPushEGrass">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="date" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="strData" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="strChecksum" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AutoPushEGrassResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="AutoPushEGrassResult" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessINBTrxn_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessINBTrxn" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessINBTrxn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessINBTrxnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessINBTrxnWest_Bengal_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessINBTrxnWest_Bengal" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessINBTrxnWest_Bengal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessINBTrxnWest_BengalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessINBRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessINBRequest" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessINBRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessINBRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessRajasthanData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessRajasthanData" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessRajasthanData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessRajasthanDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_OnlineEnquiry_Rajasthan_InputMessage">
+    <wsdl:part name="parameters" element="tns:OnlineEnquiry_Rajasthan" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_OnlineEnquiry_Rajasthan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OnlineEnquiry_RajasthanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_OnlineEnquiry_TamilNadu_InputMessage">
+    <wsdl:part name="parameters" element="tns:OnlineEnquiry_TamilNadu" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_OnlineEnquiry_TamilNadu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OnlineEnquiry_TamilNaduResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessINBOnlineEnquiry_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessINBOnlineEnquiry" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessINBOnlineEnquiry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessINBOnlineEnquiryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessGoaData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessGoaData" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessGoaData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessGoaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessHaryanaData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessHaryanaData" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessHaryanaData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessHaryanaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_OnlineEnquiry_Haryana_InputMessage">
+    <wsdl:part name="parameters" element="tns:OnlineEnquiry_Haryana" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_OnlineEnquiry_Haryana_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OnlineEnquiry_HaryanaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessnewChallanKarnatakaINBData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessnewChallanKarnatakaINBData" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessnewChallanKarnatakaINBData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessnewChallanKarnatakaINBDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_SaveChlnMatrixChqDD_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveChlnMatrixChqDD" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_SaveChlnMatrixChqDD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveChlnMatrixChqDDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_SaveChlnMatrixCCDC_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveChlnMatrixCCDC" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_SaveChlnMatrixCCDC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveChlnMatrixCCDCResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessKarnatakaStopPayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessKarnatakaStopPayment" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessKarnatakaStopPayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessKarnatakaStopPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessKarnatakaCanStopPayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessKarnatakaCanStopPayment" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessKarnatakaCanStopPayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessKarnatakaCanStopPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_StopPaymentReqDepCheq_InputMessage">
+    <wsdl:part name="parameters" element="tns:StopPaymentReqDepCheq" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_StopPaymentReqDepCheq_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StopPaymentReqDepCheqResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_CancelStopPaymentReqDepCheq_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelStopPaymentReqDepCheq" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_CancelStopPaymentReqDepCheq_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelStopPaymentReqDepCheqResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_OnlineEnquiry_KII_InputMessage">
+    <wsdl:part name="parameters" element="tns:OnlineEnquiry_KII" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_OnlineEnquiry_KII_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OnlineEnquiry_KIIResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessMaharashtraData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessMaharashtraData" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessMaharashtraData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessMaharashtraDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_OnlineEnquiry_Maharashtra_InputMessage">
+    <wsdl:part name="parameters" element="tns:OnlineEnquiry_Maharashtra" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_OnlineEnquiry_Maharashtra_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OnlineEnquiry_MaharashtraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_SaveCashMatrixRCT010_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCashMatrixRCT010" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_SaveCashMatrixRCT010_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCashMatrixRCT010Response" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_Save_KII_ISR001_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_KII_ISR001" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_Save_KII_ISR001_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_KII_ISR001Response" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_Save_KII_ISR002_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_KII_ISR002" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_Save_KII_ISR002_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_KII_ISR002Response" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_Save_KII_DEP001_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_KII_DEP001" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_Save_KII_DEP001_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_KII_DEP001Response" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_Save_KII_DEP007_InputMessage">
+    <wsdl:part name="parameters" element="tns:Save_KII_DEP007" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_Save_KII_DEP007_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Save_KII_DEP007Response" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessJharkhandData_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessJharkhandData" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_ProcessJharkhandData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessJharkhandDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_OnlineEnquiry_Jharkhand_InputMessage">
+    <wsdl:part name="parameters" element="tns:OnlineEnquiry_Jharkhand" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_OnlineEnquiry_Jharkhand_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OnlineEnquiry_JharkhandResponse" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_AutoPushEGrass_InputMessage">
+    <wsdl:part name="parameters" element="tns:AutoPushEGrass" />
+  </wsdl:message>
+  <wsdl:message name="IserSTGTV2Receipt_INB_AutoPushEGrass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutoPushEGrassResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IserSTGTV2Receipt_INB">
+    <wsdl:operation name="ProcessINBTrxn">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessINBTrxn" message="tns:IserSTGTV2Receipt_INB_ProcessINBTrxn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessINBTrxnResponse" message="tns:IserSTGTV2Receipt_INB_ProcessINBTrxn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessINBTrxnWest_Bengal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessINBTrxnWest_Bengal" message="tns:IserSTGTV2Receipt_INB_ProcessINBTrxnWest_Bengal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessINBTrxnWest_BengalResponse" message="tns:IserSTGTV2Receipt_INB_ProcessINBTrxnWest_Bengal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessINBRequest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessINBRequest" message="tns:IserSTGTV2Receipt_INB_ProcessINBRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessINBRequestResponse" message="tns:IserSTGTV2Receipt_INB_ProcessINBRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessRajasthanData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessRajasthanData" message="tns:IserSTGTV2Receipt_INB_ProcessRajasthanData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessRajasthanDataResponse" message="tns:IserSTGTV2Receipt_INB_ProcessRajasthanData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineEnquiry_Rajasthan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_Rajasthan" message="tns:IserSTGTV2Receipt_INB_OnlineEnquiry_Rajasthan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_RajasthanResponse" message="tns:IserSTGTV2Receipt_INB_OnlineEnquiry_Rajasthan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineEnquiry_TamilNadu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_TamilNadu" message="tns:IserSTGTV2Receipt_INB_OnlineEnquiry_TamilNadu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_TamilNaduResponse" message="tns:IserSTGTV2Receipt_INB_OnlineEnquiry_TamilNadu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessINBOnlineEnquiry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessINBOnlineEnquiry" message="tns:IserSTGTV2Receipt_INB_ProcessINBOnlineEnquiry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessINBOnlineEnquiryResponse" message="tns:IserSTGTV2Receipt_INB_ProcessINBOnlineEnquiry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessGoaData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessGoaData" message="tns:IserSTGTV2Receipt_INB_ProcessGoaData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessGoaDataResponse" message="tns:IserSTGTV2Receipt_INB_ProcessGoaData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessHaryanaData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessHaryanaData" message="tns:IserSTGTV2Receipt_INB_ProcessHaryanaData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessHaryanaDataResponse" message="tns:IserSTGTV2Receipt_INB_ProcessHaryanaData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineEnquiry_Haryana">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_Haryana" message="tns:IserSTGTV2Receipt_INB_OnlineEnquiry_Haryana_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_HaryanaResponse" message="tns:IserSTGTV2Receipt_INB_OnlineEnquiry_Haryana_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessnewChallanKarnatakaINBData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessnewChallanKarnatakaINBData" message="tns:IserSTGTV2Receipt_INB_ProcessnewChallanKarnatakaINBData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessnewChallanKarnatakaINBDataResponse" message="tns:IserSTGTV2Receipt_INB_ProcessnewChallanKarnatakaINBData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveChlnMatrixChqDD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/SaveChlnMatrixChqDD" message="tns:IserSTGTV2Receipt_INB_SaveChlnMatrixChqDD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/SaveChlnMatrixChqDDResponse" message="tns:IserSTGTV2Receipt_INB_SaveChlnMatrixChqDD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveChlnMatrixCCDC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/SaveChlnMatrixCCDC" message="tns:IserSTGTV2Receipt_INB_SaveChlnMatrixCCDC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/SaveChlnMatrixCCDCResponse" message="tns:IserSTGTV2Receipt_INB_SaveChlnMatrixCCDC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessKarnatakaStopPayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessKarnatakaStopPayment" message="tns:IserSTGTV2Receipt_INB_ProcessKarnatakaStopPayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessKarnatakaStopPaymentResponse" message="tns:IserSTGTV2Receipt_INB_ProcessKarnatakaStopPayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessKarnatakaCanStopPayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessKarnatakaCanStopPayment" message="tns:IserSTGTV2Receipt_INB_ProcessKarnatakaCanStopPayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessKarnatakaCanStopPaymentResponse" message="tns:IserSTGTV2Receipt_INB_ProcessKarnatakaCanStopPayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StopPaymentReqDepCheq">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/StopPaymentReqDepCheq" message="tns:IserSTGTV2Receipt_INB_StopPaymentReqDepCheq_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/StopPaymentReqDepCheqResponse" message="tns:IserSTGTV2Receipt_INB_StopPaymentReqDepCheq_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelStopPaymentReqDepCheq">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/CancelStopPaymentReqDepCheq" message="tns:IserSTGTV2Receipt_INB_CancelStopPaymentReqDepCheq_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/CancelStopPaymentReqDepCheqResponse" message="tns:IserSTGTV2Receipt_INB_CancelStopPaymentReqDepCheq_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineEnquiry_KII">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_KII" message="tns:IserSTGTV2Receipt_INB_OnlineEnquiry_KII_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_KIIResponse" message="tns:IserSTGTV2Receipt_INB_OnlineEnquiry_KII_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessMaharashtraData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessMaharashtraData" message="tns:IserSTGTV2Receipt_INB_ProcessMaharashtraData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessMaharashtraDataResponse" message="tns:IserSTGTV2Receipt_INB_ProcessMaharashtraData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineEnquiry_Maharashtra">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_Maharashtra" message="tns:IserSTGTV2Receipt_INB_OnlineEnquiry_Maharashtra_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_MaharashtraResponse" message="tns:IserSTGTV2Receipt_INB_OnlineEnquiry_Maharashtra_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCashMatrixRCT010">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/SaveCashMatrixRCT010" message="tns:IserSTGTV2Receipt_INB_SaveCashMatrixRCT010_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/SaveCashMatrixRCT010Response" message="tns:IserSTGTV2Receipt_INB_SaveCashMatrixRCT010_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_KII_ISR001">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/Save_KII_ISR001" message="tns:IserSTGTV2Receipt_INB_Save_KII_ISR001_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/Save_KII_ISR001Response" message="tns:IserSTGTV2Receipt_INB_Save_KII_ISR001_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_KII_ISR002">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/Save_KII_ISR002" message="tns:IserSTGTV2Receipt_INB_Save_KII_ISR002_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/Save_KII_ISR002Response" message="tns:IserSTGTV2Receipt_INB_Save_KII_ISR002_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_KII_DEP001">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/Save_KII_DEP001" message="tns:IserSTGTV2Receipt_INB_Save_KII_DEP001_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/Save_KII_DEP001Response" message="tns:IserSTGTV2Receipt_INB_Save_KII_DEP001_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Save_KII_DEP007">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/Save_KII_DEP007" message="tns:IserSTGTV2Receipt_INB_Save_KII_DEP007_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/Save_KII_DEP007Response" message="tns:IserSTGTV2Receipt_INB_Save_KII_DEP007_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessJharkhandData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessJharkhandData" message="tns:IserSTGTV2Receipt_INB_ProcessJharkhandData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessJharkhandDataResponse" message="tns:IserSTGTV2Receipt_INB_ProcessJharkhandData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OnlineEnquiry_Jharkhand">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_Jharkhand" message="tns:IserSTGTV2Receipt_INB_OnlineEnquiry_Jharkhand_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_JharkhandResponse" message="tns:IserSTGTV2Receipt_INB_OnlineEnquiry_Jharkhand_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AutoPushEGrass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/AutoPushEGrass" message="tns:IserSTGTV2Receipt_INB_AutoPushEGrass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IserSTGTV2Receipt_INB/AutoPushEGrassResponse" message="tns:IserSTGTV2Receipt_INB_AutoPushEGrass_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IserSTGTV2Receipt_INB" type="tns:IserSTGTV2Receipt_INB">
+    <wsp:PolicyReference URI="#WSHttpBinding_IserSTGTV2Receipt_INB_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcessINBTrxn">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessINBTrxn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessINBTrxnWest_Bengal">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessINBTrxnWest_Bengal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessINBRequest">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessINBRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessRajasthanData">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessRajasthanData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineEnquiry_Rajasthan">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_Rajasthan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineEnquiry_TamilNadu">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_TamilNadu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessINBOnlineEnquiry">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessINBOnlineEnquiry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessGoaData">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessGoaData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessHaryanaData">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessHaryanaData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineEnquiry_Haryana">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_Haryana" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessnewChallanKarnatakaINBData">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessnewChallanKarnatakaINBData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveChlnMatrixChqDD">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/SaveChlnMatrixChqDD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveChlnMatrixCCDC">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/SaveChlnMatrixCCDC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessKarnatakaStopPayment">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessKarnatakaStopPayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessKarnatakaCanStopPayment">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessKarnatakaCanStopPayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StopPaymentReqDepCheq">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/StopPaymentReqDepCheq" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelStopPaymentReqDepCheq">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/CancelStopPaymentReqDepCheq" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineEnquiry_KII">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_KII" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessMaharashtraData">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessMaharashtraData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineEnquiry_Maharashtra">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_Maharashtra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCashMatrixRCT010">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/SaveCashMatrixRCT010" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_KII_ISR001">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/Save_KII_ISR001" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_KII_ISR002">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/Save_KII_ISR002" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_KII_DEP001">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/Save_KII_DEP001" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Save_KII_DEP007">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/Save_KII_DEP007" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessJharkhandData">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/ProcessJharkhandData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OnlineEnquiry_Jharkhand">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/OnlineEnquiry_Jharkhand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutoPushEGrass">
+      <soap12:operation soapAction="http://tempuri.org/IserSTGTV2Receipt_INB/AutoPushEGrass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="serSTGTV2Receipt_INB">
+    <wsdl:port name="WSHttpBinding_IserSTGTV2Receipt_INB" binding="tns:WSHttpBinding_IserSTGTV2Receipt_INB">
+      <soap12:address location="https://gbss.sbi.co.in:8443/GBSS_Service/STGTV2/Receipt/serSTGTV2Receipt_INB.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://gbss.sbi.co.in:8443/GBSS_Service/STGTV2/Receipt/serSTGTV2Receipt_INB.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

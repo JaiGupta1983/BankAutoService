@@ -1,0 +1,32 @@
+﻿body {
+}
+.ASPHeading
+{
+	font-size: 12pt;
+	color:#333333;
+	font-weight:bold;
+	background-color:#78BADE;
+	text-align:center;
+}
+.ASPButton
+{
+   color:#333333;
+   font-family:Verdana;
+   font-size:80%;   font-weight:bold;   background-color:white;
+   border:1px solid; border-color:#696;   height:22px;  
+}
+.ASPLabel
+{
+	color:#333333;
+}
+.ItemText
+{
+	font-family: Verdana, Helvetica, sans-serif;
+    font-size:  11px;
+    font-weight:    normal;
+    color: #333333;
+}
+.DropDownlist
+{
+	width:120px;
+}
